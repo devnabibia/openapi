@@ -1,0 +1,10 @@
+type: object
+
+properties:
+  config:
+    anyOf:
+      - $ref: './mysql.yml'
+      - $ref: './postgres.yml'
+      - $ref: './redis.yml'
+      - $ref: './mongo.yml'
+      - $ref: './kafka.yml'
